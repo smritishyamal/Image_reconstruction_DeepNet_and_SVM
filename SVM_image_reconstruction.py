@@ -16,7 +16,7 @@ from PIL import Image
 # SVM training
 # code snipet
 #rawTrainingData = np.loadtxt('abalone.txt', delimiter = ',')
-rawTrainingData = np.loadtxt('abalone_challenge.txt', delimiter = ',')
+rawTrainingData = np.loadtxt('Input_data.txt', delimiter = ',')
 lenx = len(rawTrainingData[:,1])
 leny = len(rawTrainingData[1,:])
 rawdata = np.zeros((lenx*leny,3))
@@ -31,7 +31,7 @@ for i in range(lenx): #1030
         
 #X = [[0], [1], [2], [3]]
 
-rawOutputData = np.loadtxt('abalone_output_new.txt', delimiter = ',')  
+rawOutputData = np.loadtxt('Output_data.txt', delimiter = ',')  
 
 rawodata = []#np.zeros((lenx*leny,1))
 #count = 0
