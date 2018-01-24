@@ -23,7 +23,7 @@ model.add(Dense(units=500, activation='relu'))
 model.add(Dense(units=1, activation='linear'))
 
 #rawTrainingData = np.loadtxt('abalone.txt', delimiter = ',')
-rawTrainingData = np.loadtxt('abalone_challenge.txt', delimiter = ',')
+rawTrainingData = np.loadtxt('Input_data.txt', delimiter = ',')
 lenx = len(rawTrainingData[:,1])
 leny = len(rawTrainingData[1,:])
 rawdata = np.zeros((lenx*leny,3))
@@ -36,7 +36,7 @@ for i in range(lenx): #1030
         rawdata[count,2] = rawTrainingData[i,j]
         count = count + 1
         
-rawOutputData = np.loadtxt('abalone_output_new.txt', delimiter = ',')  
+rawOutputData = np.loadtxt('Output_data.txt', delimiter = ',')  
 
 rawodata = np.zeros((lenx*leny,1))
 count = 0
